@@ -24,3 +24,7 @@ int print_percentage()
 	putchar('%');
 	return(1);
 }
+
+int print_integers(int)
+{
+}

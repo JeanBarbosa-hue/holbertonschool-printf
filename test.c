@@ -33,12 +33,18 @@ int _printf(const char *format, ...)
 					res += print_string(va_arg(list, char *));
 					break;
 				}
+				case 'i':
+				{
+
+				}
 				case '%':
 				{
 					res += print_percentage();
 					break;
 				}
 			}
+			default;
+			break;
 			idx++;
 		}
 
