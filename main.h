@@ -5,6 +5,5 @@ int _printf(const char *format, ...);
 int print_string(char *c);
 int print_letter(char c);
 int print_percentage();
-int print_integer(int);
 
 #endif

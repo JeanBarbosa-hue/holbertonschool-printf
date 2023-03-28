@@ -1,4 +1,4 @@
-#include "printf.h"
+#include "main.h"
 #include<stdio.h>
 
 int print_letter(char c)
@@ -23,8 +23,4 @@ int print_percentage()
 {
 	putchar('%');
 	return(1);
-}
-
-int print_integers(int)
-{
 }

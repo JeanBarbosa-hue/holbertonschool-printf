@@ -1,4 +1,4 @@
-#include "printf.h"
+#include "main.h"
 #include <stdio.h>
 #include <stdarg.h>
 
@@ -33,18 +33,12 @@ int _printf(const char *format, ...)
 					res += print_string(va_arg(list, char *));
 					break;
 				}
-				case 'i':
-				{
-
-				}
 				case '%':
 				{
 					res += print_percentage();
 					break;
 				}
 			}
-			default;
-			break;
 			idx++;
 		}
 
