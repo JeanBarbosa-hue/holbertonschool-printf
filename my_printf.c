@@ -23,6 +23,7 @@ int _printf(const char *format, ...)
 					res += print_string(va_arg(list, char *));
 					break;
 				}
+
 				case '%':
 				{
 					res += print_percentage();

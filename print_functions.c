@@ -26,3 +26,14 @@ int print_percentage(void)
 	putchar('%');
 	return(1);
 }
+
+int print_integer(char *c)
+{
+
+	int loop;
+
+	for(loop = 0; c[loop] != '\0'; loop++);
+
+	return (loop);
+
+}
