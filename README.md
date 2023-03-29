@@ -1,3 +1,3 @@
 # holbertonschool-printf
 
-hi
+In this repository we made a printf like function
