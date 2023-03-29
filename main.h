@@ -6,4 +6,5 @@ int print_letter(int);
 int print_string(char *);
 int print_percentage();
 int print_integer(char *);
+
 #endif 

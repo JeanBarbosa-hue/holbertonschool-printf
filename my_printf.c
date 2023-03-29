@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 #include <stdarg.h>
 int _printf(const char *format, ...)
 {
@@ -7,6 +8,13 @@ int _printf(const char *format, ...)
 	va_list(list);
 	va_start(list, format);
 
+	if (format == NULL)
+	{
+	return (0);
+	}
+
+	else
+	{
 	while (format[idx] != '\0')
 	{
 		if (format[idx] == '%')
@@ -24,11 +32,24 @@ int _printf(const char *format, ...)
 					break;
 				}
 
+				case 'i': case 'd':
+				{
+					res += print_integer(va_arg(list, int));
+					break;
+				}
+
 				case '%':
 				{
 					res += print_percentage();
 					break;
 				}
+
+				default:
+				{
+					res += print_letter(format[idx]);
+					res += print_letter(format[idx + 1]);
+				}
+
 			}
 			idx++;
 		}
@@ -38,6 +59,7 @@ int _printf(const char *format, ...)
 			res += print_letter(format[idx]);
 		}
 		idx++;
+	}
 	}
 	va_end(list);
 	return(res);
