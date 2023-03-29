@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	_printf("%i%c\n", 'H', 999);
-	printf("%i%c\n", 'H', 999);
+	printf("%rr\n");
+
 	return (0);
 }

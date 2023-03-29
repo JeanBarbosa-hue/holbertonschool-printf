@@ -44,6 +44,12 @@ int _printf(const char *format, ...)
 					break;
 				}
 
+				default:
+				{
+					res += print_letter(format[idx]);
+					res += print_letter(format[idx + 1]);
+				}
+
 			}
 			idx++;
 		}
