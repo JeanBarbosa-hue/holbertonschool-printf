@@ -1,10 +1,14 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int _printf(const char *format, ...);
-int print_letter(int);
-int print_string(char *);
-int print_percentage();
-int print_integer(int);
+int _putchar(char c);
 
-#endif 
+int print_int(int num);
+
+int print_string(char *c);
+
+int print_char(char a);
+
+int _printf(const char *format, ...);
+
+#endif

@@ -1,41 +1,12 @@
 #include "main.h"
-#include <string.h>
-#include <unistd.h>
-#include <stdio.h>
-int print_letter(int let)
-{
-	putchar(let);
-	return (1);
-}
 
-int print_string(char *b)
-{
-	int loop;
-	int str;
+/**
+ *print_int - print number
+ *@n: number with the lenght saved
+ *Return: the total length of numbers printed
+ */
 
-	if (b == NULL)
-	{
-	return (0);
-	}
-
-	else
-	{
-	for(loop = 0; b[loop] != '\0'; loop++)
-	{
-	str += putchar(b[loop]);
-	}
-	}
-
-	return (str);
-}
-
-int print_percentage(void)
-{
-	putchar('%');
-	return(1);
-}
-
-int print_integer(int num)
+int print_int(int num)
 {
 	char buffer[12];
 	int idx;
