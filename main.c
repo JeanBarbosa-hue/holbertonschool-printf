@@ -9,19 +9,6 @@
  */
 int main(void)
 {
-<<<<<<< HEAD
-
-	_printf("Negative:[%d]\n", -762534);
-	 printf("Negative:[%d]\n", -762534);
-	_printf("Character:[%c]\n", 'H');
-	printf("Character:[%c]\n", 'H');
-	_printf("String:[%s]\n", "I am a string !");
-	printf("String:[%s]\n", "I am a string !");
-	_printf("Percent:[%%]\n");
-	printf("Percent:[%%]\n");
-    return (0);
-}
-=======
     int len;
     int len2;
     unsigned int ui;
@@ -55,5 +42,3 @@ int main(void)
     printf("Unknown:[%r]\n");
     return (0);
 }
-
->>>>>>> main

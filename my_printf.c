@@ -1,20 +1,13 @@
 #include "main.h"
-<<<<<<< HEAD
 #include <stdio.h>
 #include <stdarg.h>
 
 /**
  * _printf - custom made printf function
- *
  * @format: pointer
- *
  * Return: total numbers accumalated
  */
 
-=======
-#include <stddef.h>
-#include <stdarg.h>
->>>>>>> main
 int _printf(const char *format, ...)
 {
 	int idx = 0;
@@ -38,34 +31,21 @@ int _printf(const char *format, ...)
 					res += print_string(va_arg(list, char *));
 					break;
 				}
-<<<<<<< HEAD
-				case 'i': case 'd':
-				{
-				}
-=======
-
 				case 'i': case 'd':
 				{
 					res += print_integer(va_arg(list, int));
 					break;
 				}
-
->>>>>>> main
 				case '%':
 				{
 					res += print_percentage();
 					break;
 				}
-<<<<<<< HEAD
-=======
-
 				default:
 				{
 					res += print_letter(format[idx]);
 					res += print_letter(format[idx + 1]);
 				}
-
->>>>>>> main
 			}
 			idx++;
 		}
