@@ -3,11 +3,11 @@
 #include <stdarg.h>
 
 /**
- * _printf - making printf like function
+ * _printf - custom made printf function
  *
  * @format: pointer
  *
- * Return: a
+ * Return: total numbers accumalated
  */
 
 int _printf(const char *format, ...)
