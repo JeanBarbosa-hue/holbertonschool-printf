@@ -1,11 +1,11 @@
 # holbertonschool-printf
 
 In this repository we made a custom function that works like the normal printf function excpet our custom made function only works with the following format specifiers:
-(c) characters
-(s) strings
-(%) percentage sign
-(d) digit
-(i) integer
+(%c) characters
+(%s) strings
+(%%) percentage sign
+(%d) digit
+(%i) integer
 
 man_3_printf - custom made man page for our custom printf
 
