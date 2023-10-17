@@ -1,21 +1,24 @@
-#holbertonschool-printf
+# Holberton School Printf
 
-In this repository we made a custom function that works like the normal printf function excpet our custom made function only works with the following format specifiers: (%c) characters (%s) strings (%%) percentage sign (%d) digit (%i) integer
+![Holberton School](https://www.holbertonschool.com/holberton-logo.png)
 
-man_3_printf - custom made man page for our custom printf
+The `holbertonschool-printf` project is an implementation of the `printf` function in the C programming language. It provides a versatile and customizable way to format and output text to the console, similar to the standard C library `printf` function.
 
-main.c - this file contains all the examples that help us see the output of what our custom printf is printing
+## Table of Contents
 
-main.h - this file is our header file where we store all our prototype functions the file is include guarded
+- [Introduction](#holberton-school-printf)
+- [Table of Contents](#table-of-contents)
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-print_char.c - function created for when we want to print a single characters also has the ability to print the percentage sign function willactivate when we use %c
+## Getting Started
 
-print_string.c - function created to print strings with null byte termination this function will activate when our custom printf is used with%s
+To get started with this project, you can follow these steps:
 
-print_integer.c - function created for when we want to print integers or digits it is able to print negative numbers and arrays that work like strings function will activate when %i or %d is used
+1. Clone the repository to your local machine:
 
-my_printf.c - this file contains the main code that makes the custom printf work it uses all the custom functions we created
-
-In collaboration with: Eduardo Figueroa Adrian Morales Luis Ayala Xai Betancourt Giovanni Barreto Jonathan Perez
-
-Creators: Jean Barbosa Jose Rivera
+   ```bash
+   git clone https://github.com/JeanBarbosa-hue/holbertonschool-printf.git
